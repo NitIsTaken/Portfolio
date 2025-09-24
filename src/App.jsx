@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Header'
 import Projects from './Project'
 import Skills from './Skills'
+import Contact from './contact'
 
 function Footer() {
   return(
@@ -23,6 +24,7 @@ function App() {
       <h2>Bienvenue sur mon portfolio</h2>
       <Projects />
       <Skills />
+      <Contact />
       <Footer />
     </div>
   )
