@@ -16,6 +16,10 @@ footer {
   color: gray;
 }
 
+.socials > a {
+  padding: 1rem;
+}
+
 h1{
   color: navy;
 }
@@ -23,7 +27,7 @@ h1{
 .about-section {
   text-align: center;
   margin: 2rem auto;
-  color: #333;
+  color: white;
 }
 
 .project-grid {
@@ -71,9 +75,13 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #222;
   color: white;
+}
+
+.nav-header{
+  display: none;
 }
 
 .header a {
@@ -84,4 +92,32 @@ h1{
 
 .header a:hover {
   text-decoration: underline;
+  color: lightblue;
+}
+
+.layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-main{
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 1024) {
+  .layout-main {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-header{
+    display: flex;
+    gap: 2rem;
+  }
 }
