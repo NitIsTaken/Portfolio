@@ -5,7 +5,7 @@ const projects = [
 
 function Projects() {
     return(
-        <section id="projects" className="projects-section">
+        <section id="projects" className="projects-section fade-in">
             <h2>Mes projets</h2>
             <div className="project-grid">
                 {projects.map((p, index)=> (
